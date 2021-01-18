@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    max-width: 100%;
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.box-main {
+    background-color: blue;
+    background-image: url(../img/image-1.jpg);
+    background-size: cover;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.nested .box {
+    background-color: slateblue;
+}
+
+.nested .box:nth-child(1) {
+    background-size: cover;
+    background-image: url(../img/image-2.webp);
+}
+
+.nested .box:nth-child(2) {
+    background-size: cover;
+    background-image: url(../img/image-3.webp);
+}
+
+.nested .box:nth-child(3) {
+    background-size: cover;
+    background-image: url(../img/image-4.jpg);
+}
+
+.nested .box:nth-child(4) {
+    background-size: cover;
+    background-image: url(../img/image-5.png);
+}
+
+h3 {
+    text-transform: capitalize;
+    transform: translate(0, 85px);
+}
+
+.box-main h3 {
+    transform: translate(0, 230px);
+}
+
+#banner {
+    margin-bottom: 50px;
+}
+
+.pix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.pix .box {
+    width: 300px;
+    height: 340px;
+    background-color: red;
+}
+
+.pix .box:nth-child(1) {
+    background-size: cover;
+    background-image: url(../img/image-6.jpeg);
+}
+
+.pix .box:nth-child(2) {
+    background-size: cover;
+    background-image: url(../img/image-7.jpeg);
+}
+
+.pix .box:nth-child(3) {
+    background-size: cover;
+    background-image: url(../img/image-8.jpeg);
+}
+
+.pix .box:nth-child(4) {
+    background-size: cover;
+    background-image: url(../img/image-9.jpeg);
+}
+
+.pix .box:nth-child(5) {
+    background-size: cover;
+    background-image: url(../img/image-10.jpeg);
+}
+
+.pix .box:nth-child(6) {
+    background-size: cover;
+    background-image: url(../img/image-11.jpeg);
+}
+
+.pix .box:nth-child(7) {
+    background-size: cover;
+    background-image: url(../img/image-12.jpeg);
+}
+
+.pix .box:nth-child(8) {
+    background-size: cover;
+    background-image: url(../img/image-5.png);
+}
