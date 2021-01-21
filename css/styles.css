@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header .container {
     display: flex;
     align-items: center;
@@ -21,6 +25,7 @@ header .container {
 
 h3 {
     color: white;
+    padding-left: 10px;
 }
 
 .menu {
@@ -155,6 +160,134 @@ li {
     color: red;
 }
 
+#footer {
+    background-color: #838383;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1rem;
+    margin: 0;
+    max-width: 100%;
+}
+
+::placeholder {
+    text-transform: uppercase;
+}
+
+.wrapper input {
+    outline: none;
+    border: none;
+    border-radius: .5em;
+    padding: .4rem;
+    width: 250px;
+}
+
+.wrapper .column {
+    margin: 0 auto;
+}
+
+.wrapper input:focus {
+    border: 1px solid orange;
+}
+
+.wrapper button {
+    outline: none;
+    border: 1px solid white;
+    background-color: #888888;
+    border-radius: .5em;
+    padding: .4rem;
+    cursor: pointer;
+    margin: .2rem 0rem .2rem;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.wrapper button:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper p {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.download button {
+    width: 100px;
+    height: 50px;
+    padding: 0;
+}
+
+.download i {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.download span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}
+
+.newsletter {
+    background-color: rgb(88, 86, 86);
+}
+
+.newsletter .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(88, 86, 86);
+    padding: 1rem;
+}
+
+.newsletter a {
+    text-transform: capitalize;
+    display: block;
+    color: orange;
+}
+
+.join,
+.payment {
+    margin-top: 30px;
+}
+
+.join i {
+    font-size: 25px;
+    margin: 10px 10px 10px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.join i:hover,
+.payment i:hover {
+    color: orange;
+}
+
+.payment i {
+    font-size: 25px;
+    margin: 10px 10px 10px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.button {
+    transform: translate(60px);
+}
+
+
+/* media queries */
+
 @media(max-width:950px) {
     .main-banner {
         grid-template-columns: 1fr;
@@ -162,8 +295,24 @@ li {
 }
 
 @media(max-width:800px) {
+    .button {
+        transform: translate(-5px);
+    }
     .feed {
         grid-template-columns: repeat(2, 1fr);
+    }
+    input {
+        display: block;
+    }
+    .button {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper .download {
+        display: none;
     }
     nav {
         display: none;
@@ -171,10 +320,14 @@ li {
     .menu {
         display: block;
         font-size: 30px;
+        cursor: pointer;
     }
 }
 
 @media(max-width:600px) {
+    * {
+        font-size: 18px;
+    }
     .feed {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -188,10 +341,19 @@ li {
     .header-wrapper h1 {
         margin: 0;
     }
-    h3 {
-        transform: translate(0, 75px);
-    }
     li {
         border-bottom: 1px solid black;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .wrapper input {
+        margin: 0 auto;
+    }
+    .newsletter .container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 }
