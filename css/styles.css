@@ -128,7 +128,7 @@ li {
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: .5;
+    opacity: .35;
 }
 
 .nested .box {
@@ -325,8 +325,8 @@ h4 {
 }
 
 @media(max-width:600px) {
-    * {
-        font-size: 18px;
+    h3 {
+        font-size: 15px;
     }
     .feed {
         grid-template-columns: repeat(1, 1fr);
@@ -355,5 +355,25 @@ h4 {
     .newsletter .container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+    }
+    .newsletter a {
+        font-size: 13px;
+    }
+    button {
+        width: 100px;
+    }
+    .newsletter h4 {
+        font-size: 15px;
+    }
+    .join h4,
+    .payment h4 {
+        font-size: 13px;
+    }
+    .join i,
+    .payment i {
+        font-size: 13px;
+    }
+    .info {
+        font-size: 15px;
     }
 }
