@@ -149,6 +149,30 @@ li {
     color: black;
 }
 
+.feed a:nth-child(1) li .cover {
+    background-image: url(../img/image-7.jpg);
+}
+
+.feed a:nth-child(2) li .cover {
+    background-image: url(../img/image-6.jpg);
+}
+
+.feed a:nth-child(3) li .cover {
+    background-image: url(../img/image-8.jpg);
+}
+
+.feed a:nth-child(4) li .cover {
+    background-image: url(../img/image-9.jpg);
+}
+
+.feed a:nth-child(5) li .cover {
+    background-image: url(../img/image-10.jpg);
+}
+
+.feed a:nth-child(6) li .cover {
+    background-image: url(../img/image-11.jpg);
+}
+
 .main-content .info-2 {
     font-size: 20px;
     margin-bottom: 15px;
@@ -180,8 +204,9 @@ li {
     outline: none;
     border: none;
     border-radius: .5em;
-    padding: .4rem;
+    padding: .5rem;
     width: 250px;
+    margin-bottom: 20px;
 }
 
 .wrapper .column {
@@ -189,12 +214,14 @@ li {
 }
 
 .wrapper input:focus {
-    border: 1px solid orange;
+    border: 2px solid orange;
 }
 
 .wrapper button {
+    color: white;
+    width: 100px;
     outline: none;
-    border: 1px solid white;
+    border: 2px solid black;
     background-color: #888888;
     border-radius: .5em;
     padding: .4rem;
@@ -206,7 +233,7 @@ li {
 
 .wrapper button:hover {
     color: orange;
-    border: 1px solid orange;
+    border: 2px solid orange;
 }
 
 h4 {
@@ -222,13 +249,13 @@ h4 {
 }
 
 .download button {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
     padding: 0;
 }
 
 .download i {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
 }
@@ -282,7 +309,8 @@ h4 {
 }
 
 .button {
-    transform: translate(60px);
+    margin: 0 auto;
+    transform: translate(20px);
 }
 
 
@@ -305,7 +333,7 @@ h4 {
         display: block;
     }
     .button {
-        margin: 0 auto;
+        margin-top: 20px;
         width: 300px;
     }
     .wrapper {
