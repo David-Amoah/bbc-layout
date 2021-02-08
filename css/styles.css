@@ -183,7 +183,7 @@ li {
 }
 
 #footer {
-    background-color: #838383;
+    background-color: rgb(80, 77, 77);
 }
 
 .wrapper {
@@ -220,7 +220,7 @@ li {
     width: 100px;
     outline: none;
     border: 2px solid black;
-    background-color: #888888;
+    background-color: rgb(80, 77, 77);
     border-radius: .5em;
     padding: .4rem;
     cursor: pointer;
@@ -266,13 +266,12 @@ h4 {
 }
 
 .newsletter {
-    background-color: rgb(88, 86, 86);
+    background-color: rgb(29, 28, 28);
 }
 
 .newsletter .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(88, 86, 86);
     padding: 1rem;
 }
 
